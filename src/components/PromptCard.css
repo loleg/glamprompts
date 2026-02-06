@@ -1,0 +1,121 @@
+
+.prompt-card {
+  background: #fff;
+  border: 1px solid #e8e8ef;
+  border-radius: 16px;
+  padding: 1.5rem;
+  transition: all 0.25s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.prompt-card:hover {
+  border-color: #d0d0e0;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+.prompt-card--expanded {
+  border-color: #6c63ff40;
+  box-shadow: 0 8px 32px rgba(108,99,255,0.08);
+}
+
+.prompt-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.prompt-card-id {
+  font-size: 0.75rem;
+  color: #bbb;
+  font-weight: 600;
+}
+
+.prompt-card-question {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #1a1a2e;
+  line-height: 1.5;
+}
+
+.prompt-card-body {
+  display: none;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.prompt-card-body--open {
+  display: flex;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.prompt-card-prompt {
+  background: #f7f7fb;
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  border-left: 4px solid #6c63ff;
+}
+
+.prompt-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #6c63ff;
+  margin-bottom: 0.5rem;
+}
+
+.prompt-card-prompt p {
+  margin: 0;
+  font-size: 0.92rem;
+  line-height: 1.7;
+  color: #444;
+}
+
+.prompt-card-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: #888;
+}
+
+.copy-btn {
+  align-self: flex-start;
+  padding: 0.5rem 1rem;
+  background: #6c63ff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.copy-btn:hover {
+  background: #5a52e0;
+  transform: translateY(-1px);
+}
+
+.prompt-card-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #6c63ff;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 0.25rem 0;
+  align-self: flex-start;
+  transition: color 0.2s ease;
+}
+
+.prompt-card-toggle:hover {
+  color: #5a52e0;
+}
