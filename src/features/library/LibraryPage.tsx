@@ -49,7 +49,7 @@ function LibraryPage({ prompts }: LibraryPageProps) {
         </h1>
         <p className="library-subtitle">
           A curated library of AI prompts for galleries, libraries, archives, and museums.
-          Explore, copy, and adapt prompts for your digital literacy programs.
+          Explore, copy, and adapt for your digital literacy programs.
         </p>
         <SearchBar value={search} onChange={setSearch} />
       </div>

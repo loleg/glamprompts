@@ -56,8 +56,8 @@ function App() {
       <Header currentPage={page} onNavigate={setPage} />
       <main className="app-main">
         {page === 'library' && <LibraryPage prompts={prompts} />}
-        {page === 'contribute' && <ContributePage onSubmit={addPrompt} onNavigate={setPage} />}
         {page === 'lab' && <LabPage />}
+        {page === 'contribute' && <ContributePage onSubmit={addPrompt} onNavigate={setPage} />}
         {page === 'tools' && <ToolsPage />}
       </main>
       <Footer />

@@ -75,6 +75,12 @@ function ContributePage({ onSubmit, onNavigate }: ContributePageProps) {
         <p>
           Share your AI prompts for the OpenGLAM community. Help build a shared resource for
           digital literacy programs at cultural institutions worldwide.
+          <br/>
+          <br/>
+          <b>This is only a prototype, responses are stored only on your computer.</b>
+          <br/>
+          You can suggest prompts and ideas permanently here: 💡  
+          <a href="https://github.com/loleg/glamprompts/issues">GitHub Issues</a>
         </p>
       </div>
 

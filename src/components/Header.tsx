@@ -10,8 +10,8 @@ interface HeaderProps {
 
 const navItems: { page: Page; label: string }[] = [
   { page: 'library', label: 'Prompt Library' },
-  { page: 'contribute', label: 'Contribute' },
   { page: 'lab', label: 'Innovation Lab' },
+  { page: 'contribute', label: 'Contribute' },
   { page: 'tools', label: 'Tools & Credits' },
 ];
 

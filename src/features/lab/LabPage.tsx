@@ -14,8 +14,12 @@ function LabPage() {
         <div className="lab-badge">Workshop Format</div>
         <h1>Humanities Innovation Lab</h1>
         <p className="lab-lead">
-          Exploring digital tools with LLMs — A hackathon-based module for digital humanities training.
-          Developed during a workshop at the University of Bern, February 6, 2026, with Apertus, the sovereign AI from Switzerland.
+          A hackathon-based module for digital humanities training.
+          <br/>
+          <br/>
+          Developed during a workshop of the MAS in Archival, Library and Information Science
+          (see <a href="https://www.unibe.ch/weiterbildungsangebote/mas_alis/index_ger.html">Info-page</a> in French and German)
+          at the University of Bern on February 6, 2026, with Apertus, the sovereign AI from Switzerland.
         </p>
       </div>
 
@@ -24,6 +28,7 @@ function LabPage() {
         <p>
           To introduce participants to the application of Large Language Models (LLMs) in digital humanities
           research and practice, while fostering critical thinking, collaboration, and innovation through a hackathon format.
+          Use the GLAMprompt library to generate challenges for your hackathon.
         </p>
       </section>
 
