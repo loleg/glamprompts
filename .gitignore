@@ -14,7 +14,6 @@ mydata/
 .Python
 build/
 node_modules/
-package-lock.json
 develop-eggs/
 dist/
 downloads/
