@@ -1,0 +1,31 @@
+{
+  "name": "glamprompts",
+  "version": "1.0.0",
+  "description": "Prompt your GLAMs!",
+  "keywords": [
+    "openglam",
+    "prompt-library",
+    "opendata"
+  ],
+  "homepage": "https://github.com/loleg/glamprompts#readme",
+  "bugs": {
+    "url": "https://github.com/loleg/glamprompts/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/loleg/glamprompts.git"
+  },
+  "license": "ISC",
+  "author": "O Lavrovsky",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "zustand": "^5.0.11"
+  }
+}

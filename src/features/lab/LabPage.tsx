@@ -33,8 +33,7 @@ function LabPage() {
           {[
             { icon: '🎓', label: 'Graduate students & researchers in humanities' },
             { icon: '📚', label: 'Digital humanities professionals & librarians' },
-            { icon: '🏛', label: 'GLAM professionals' },
-            { icon: '💡', label: 'Anyone exploring humanities × technology' },
+            { icon: '🏛', label: 'GLAM community & interested technologists' },
           ].map((a) => (
             <div className="audience-card" key={a.label}>
               <span className="audience-icon">{a.icon}</span>

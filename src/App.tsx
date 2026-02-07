@@ -17,20 +17,20 @@ function App() {
   const [page, setPage] = useState<Page>('library');
   const [prompts, setPrompts] = useState<Prompt[]>([]);
   const [loaded, setLoaded] = useState(false);
+  const stored = persistence((state) => state.prompts);
 
   useEffect(() => {
     (async () => {
-      const stored = await persistence.getItem('glamprompt_prompts');
       if (stored) {
         try {
           setPrompts(JSON.parse(stored));
         } catch {
           setPrompts(seedPrompts);
-          await persistence.setItem('glamprompt_prompts', JSON.stringify(seedPrompts));
+          persistence.prompts = JSON.stringify(seedPrompts);
         }
       } else {
         setPrompts(seedPrompts);
-        await persistence.setItem('glamprompt_prompts', JSON.stringify(seedPrompts));
+        persistence.prompts = JSON.stringify(seedPrompts);
       }
       setLoaded(true);
     })();
@@ -39,7 +39,7 @@ function App() {
   const addPrompt = async (prompt: Prompt) => {
     const updated = [...prompts, prompt];
     setPrompts(updated);
-    await persistence.setItem('glamprompt_prompts', JSON.stringify(updated));
+    await persistence.set({ prompts: JSON.stringify(updated) });
   };
 
   if (!loaded) {
